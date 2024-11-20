@@ -1,6 +1,16 @@
+"""jotain"""
+
 import re
+import sys
+import os
+
+
 from entities.user import User
 from repositories.user_repository import UserRepository
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+
+
 
 
 class UserInputError(Exception):
@@ -25,6 +35,8 @@ class UserService:
 
         if not user or user.password != password:
             raise AuthenticationError("Invalid username or password")
+            
+        
 
         return user
 
@@ -35,6 +47,7 @@ class UserService:
             User(username, password)
         )
 
+
         return user
 
     def validate(self, username, password):
@@ -42,12 +55,27 @@ class UserService:
             raise UserInputError("Username and password are required")
 
         # toteuta loput tarkastukset tänne ja nosta virhe virhetilanteissa
-        if UserRepository.find_by_username(self, username) != None:
-            raise Exception(
-                f"User with username {username} already exists"
-            )
+        try:
+            self.check_credentials(username, password)
+            raise Exception(f"User with username {username} already exists")
+        except AuthenticationError:
+            # This means the username doesn't exist or password is incorrect
+            # Continue with user creation or other logic
+            pass
+        except UserInputError:
+            # This means either username or password was missing
+            raise Exception("Username and password are required")
 
         if (re.match("^[a-z]{3,}$", username)):
-            print("Ok")
+            print("Valid username")
         else:
-            print("Virheellinen")
+            raise UserInputError("Invalid username")
+
+        if (re.match("^[a-z]{8,}\d+$", password)):
+            (print("Valid password"))
+        else:
+            raise UserInputError("Invalid password")
+
+        
+        
+    
