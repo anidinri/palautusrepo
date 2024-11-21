@@ -1,354 +1,345 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-20T13:17:17.161498" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-21T10:38:07.201283" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests">
 <suite id="s1-s1" name="Login" source="C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\login.robot">
 <test id="s1-s1-t1" name="Login With Correct Credentials" line="9">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.225408" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.325161" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.225056" elapsed="0.000425"/>
+<status status="PASS" start="2024-11-21T10:38:07.324745" elapsed="0.000487"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.225896" elapsed="0.000129"/>
+<status status="PASS" start="2024-11-21T10:38:07.326218" elapsed="0.000110"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.225665" elapsed="0.000448"/>
+<status status="PASS" start="2024-11-21T10:38:07.325956" elapsed="0.000475"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.224078" elapsed="0.002088"/>
+<status status="PASS" start="2024-11-21T10:38:07.323993" elapsed="0.002482"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.226551" elapsed="0.000132"/>
+<status status="PASS" start="2024-11-21T10:38:07.326820" elapsed="0.000153"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.226780" elapsed="0.000121"/>
+<status status="PASS" start="2024-11-21T10:38:07.327066" elapsed="0.000145"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.226985" elapsed="0.000091"/>
+<status status="PASS" start="2024-11-21T10:38:07.327287" elapsed="0.000118"/>
 </kw>
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.226316" elapsed="0.000809"/>
+<status status="PASS" start="2024-11-21T10:38:07.326627" elapsed="0.000818"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.223035" elapsed="0.004200"/>
+<status status="PASS" start="2024-11-21T10:38:07.322995" elapsed="0.004575"/>
 </test>
 <test id="s1-s1-t2" name="Login With Incorrect Password" line="13">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.228379" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.328458" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.228191" elapsed="0.000278"/>
+<status status="PASS" start="2024-11-21T10:38:07.328304" elapsed="0.000266"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.228814" elapsed="0.000107"/>
+<status status="PASS" start="2024-11-21T10:38:07.328927" elapsed="0.000097"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.228612" elapsed="0.000366"/>
+<status status="PASS" start="2024-11-21T10:38:07.328713" elapsed="0.000376"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.227902" elapsed="0.001120"/>
+<status status="PASS" start="2024-11-21T10:38:07.328130" elapsed="0.001006"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.229432" elapsed="0.000151"/>
+<status status="PASS" start="2024-11-21T10:38:07.329479" elapsed="0.000091"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.229667" elapsed="0.000108"/>
+<status status="PASS" start="2024-11-21T10:38:07.329661" elapsed="0.000102"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.229866" elapsed="0.000089"/>
+<status status="PASS" start="2024-11-21T10:38:07.329838" elapsed="0.000119"/>
 </kw>
 <arg>kalle</arg>
 <arg>kissa</arg>
-<status status="PASS" start="2024-11-20T13:17:17.229149" elapsed="0.000853"/>
+<status status="PASS" start="2024-11-21T10:38:07.329263" elapsed="0.000731"/>
 </kw>
 <kw name="Output Should Contain" owner="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" start="2024-11-20T13:17:17.230094" elapsed="0.000092"/>
+<status status="PASS" start="2024-11-21T10:38:07.330087" elapsed="0.000080"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.227466" elapsed="0.002843"/>
+<status status="PASS" start="2024-11-21T10:38:07.327821" elapsed="0.002441"/>
 </test>
 <test id="s1-s1-t3" name="Login With Nonexistent Username" line="17">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.231142" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.331212" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.231027" elapsed="0.000157"/>
+<status status="PASS" start="2024-11-21T10:38:07.331060" elapsed="0.000233"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.231471" elapsed="0.000085"/>
+<status status="PASS" start="2024-11-21T10:38:07.331545" elapsed="0.000166"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.231300" elapsed="0.000309"/>
+<status status="PASS" start="2024-11-21T10:38:07.331405" elapsed="0.000371"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.230808" elapsed="0.000841"/>
+<status status="PASS" start="2024-11-21T10:38:07.330875" elapsed="0.000942"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.231985" elapsed="0.000111"/>
+<status status="PASS" start="2024-11-21T10:38:07.332206" elapsed="0.000174"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.232175" elapsed="0.000104"/>
+<status status="PASS" start="2024-11-21T10:38:07.332472" elapsed="0.000144"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.232358" elapsed="0.000078"/>
+<status status="PASS" start="2024-11-21T10:38:07.332741" elapsed="0.000123"/>
 </kw>
 <arg>kissa</arg>
 <arg>kalle123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.231762" elapsed="0.000720"/>
+<status status="PASS" start="2024-11-21T10:38:07.331946" elapsed="0.000985"/>
 </kw>
 <kw name="Output Should Contain" owner="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" start="2024-11-20T13:17:17.232561" elapsed="0.000080"/>
+<status status="PASS" start="2024-11-21T10:38:07.333100" elapsed="0.000131"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.230521" elapsed="0.002208"/>
+<status status="PASS" start="2024-11-21T10:38:07.330555" elapsed="0.002858"/>
 </test>
-<status status="PASS" start="2024-11-20T13:17:17.204973" elapsed="0.028140"/>
+<status status="PASS" start="2024-11-21T10:38:07.292468" elapsed="0.041765"/>
 </suite>
 <suite id="s1-s2" name="Register" source="C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\register.robot">
 <test id="s1-s2-t1" name="Register With Valid Username And Password" line="10">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.238077" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.341429" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.237932" elapsed="0.000193"/>
+<status status="PASS" start="2024-11-21T10:38:07.341241" elapsed="0.000240"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.238452" elapsed="0.000086"/>
+<status status="PASS" start="2024-11-21T10:38:07.341767" elapsed="0.000101"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.238259" elapsed="0.000336"/>
+<status status="PASS" start="2024-11-21T10:38:07.341609" elapsed="0.000304"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.237217" elapsed="0.001421"/>
+<status status="PASS" start="2024-11-21T10:38:07.340121" elapsed="0.001827"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.238988" elapsed="0.000111"/>
+<status status="PASS" start="2024-11-21T10:38:07.342247" elapsed="0.000094"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.239179" elapsed="0.000102"/>
+<status status="PASS" start="2024-11-21T10:38:07.342429" elapsed="0.000079"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.239360" elapsed="0.000077"/>
+<status status="PASS" start="2024-11-21T10:38:07.342584" elapsed="0.000061"/>
 </kw>
 <arg>kissa</arg>
 <arg>koirakoira3</arg>
-<status status="PASS" start="2024-11-20T13:17:17.238758" elapsed="0.000725"/>
+<status status="PASS" start="2024-11-21T10:38:07.342073" elapsed="0.000607"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.236733" elapsed="0.002841"/>
+<status status="PASS" start="2024-11-21T10:38:07.339520" elapsed="0.003250"/>
 </test>
 <test id="s1-s2-t2" name="Register With Already Taken Username And Valid Password" line="13">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.240912" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.343602" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.240726" elapsed="0.000256"/>
+<status status="PASS" start="2024-11-21T10:38:07.343496" elapsed="0.000160"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.241666" elapsed="0.000136"/>
+<status status="PASS" start="2024-11-21T10:38:07.344029" elapsed="0.000087"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.241164" elapsed="0.000743"/>
+<status status="PASS" start="2024-11-21T10:38:07.343826" elapsed="0.000336"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.240444" elapsed="0.001535"/>
+<status status="PASS" start="2024-11-21T10:38:07.343328" elapsed="0.000886"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.242801" elapsed="0.000536"/>
+<status status="PASS" start="2024-11-21T10:38:07.344498" elapsed="0.000114"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.243491" elapsed="0.000176"/>
+<status status="PASS" start="2024-11-21T10:38:07.344707" elapsed="0.000113"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.243796" elapsed="0.000227"/>
+<status status="PASS" start="2024-11-21T10:38:07.344901" elapsed="0.000083"/>
 </kw>
 <arg>kissa</arg>
 <arg>koirakoira3</arg>
-<status status="PASS" start="2024-11-20T13:17:17.242431" elapsed="0.001800"/>
+<status status="PASS" start="2024-11-21T10:38:07.344309" elapsed="0.000744"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.239772" elapsed="0.004571"/>
+<status status="PASS" start="2024-11-21T10:38:07.343035" elapsed="0.002374"/>
 </test>
 <test id="s1-s2-t3" name="Register With Too Short Username And Valid Password" line="16">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.245542" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.346396" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.245373" elapsed="0.000224"/>
+<status status="PASS" start="2024-11-21T10:38:07.346261" elapsed="0.000187"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.246007" elapsed="0.000124"/>
+<status status="PASS" start="2024-11-21T10:38:07.346720" elapsed="0.000071"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.245754" elapsed="0.000461"/>
+<status status="PASS" start="2024-11-21T10:38:07.346554" elapsed="0.000310"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.245125" elapsed="0.001158"/>
+<status status="PASS" start="2024-11-21T10:38:07.346033" elapsed="0.000872"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.246788" elapsed="0.000192"/>
+<status status="PASS" start="2024-11-21T10:38:07.347171" elapsed="0.000120"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.247086" elapsed="0.000117"/>
+<status status="PASS" start="2024-11-21T10:38:07.347354" elapsed="0.000080"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.247286" elapsed="0.000079"/>
+<status status="PASS" start="2024-11-21T10:38:07.347496" elapsed="0.000099"/>
 </kw>
 <arg>ma</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.246458" elapsed="0.000955"/>
+<status status="PASS" start="2024-11-21T10:38:07.346999" elapsed="0.000637"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.244639" elapsed="0.002867"/>
+<status status="PASS" start="2024-11-21T10:38:07.345693" elapsed="0.002245"/>
 </test>
 <test id="s1-s2-t4" name="Register With Enough Long But Invalid Username And Valid Password" line="19">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.248669" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.349368" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.248514" elapsed="0.000237"/>
+<status status="PASS" start="2024-11-21T10:38:07.349177" elapsed="0.000247"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.249164" elapsed="0.000136"/>
+<status status="PASS" start="2024-11-21T10:38:07.349811" elapsed="0.000076"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.248937" elapsed="0.000436"/>
+<status status="PASS" start="2024-11-21T10:38:07.349605" elapsed="0.000412"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.248229" elapsed="0.001187"/>
+<status status="PASS" start="2024-11-21T10:38:07.348879" elapsed="0.001185"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.249772" elapsed="0.000112"/>
+<status status="PASS" start="2024-11-21T10:38:07.350382" elapsed="0.000382"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.249963" elapsed="0.000105"/>
+<status status="PASS" start="2024-11-21T10:38:07.350854" elapsed="0.000110"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.250143" elapsed="0.000078"/>
+<status status="PASS" start="2024-11-21T10:38:07.351029" elapsed="0.000101"/>
 </kw>
 <arg>matti12</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.249539" elapsed="0.000729"/>
+<status status="PASS" start="2024-11-21T10:38:07.350188" elapsed="0.001030"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.247751" elapsed="0.002637"/>
+<status status="PASS" start="2024-11-21T10:38:07.348209" elapsed="0.003122"/>
 </test>
 <test id="s1-s2-t5" name="Register With Valid Username And Too Short Password" line="22">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.251578" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.352171" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.251370" elapsed="0.000280"/>
+<status status="PASS" start="2024-11-21T10:38:07.352068" elapsed="0.000154"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.251984" elapsed="0.000086"/>
+<status status="PASS" start="2024-11-21T10:38:07.352466" elapsed="0.000071"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.251799" elapsed="0.000324"/>
+<status status="PASS" start="2024-11-21T10:38:07.352315" elapsed="0.000262"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.251100" elapsed="0.001065"/>
+<status status="PASS" start="2024-11-21T10:38:07.351903" elapsed="0.000717"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.252495" elapsed="0.000111"/>
+<status status="PASS" start="2024-11-21T10:38:07.352906" elapsed="0.000095"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.252713" elapsed="0.000107"/>
+<status status="PASS" start="2024-11-21T10:38:07.353061" elapsed="0.000078"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.252896" elapsed="0.000081"/>
+<status status="PASS" start="2024-11-21T10:38:07.353196" elapsed="0.000081"/>
 </kw>
 <arg>matti</arg>
 <arg>kala</arg>
-<status status="PASS" start="2024-11-20T13:17:17.252280" elapsed="0.000743"/>
+<status status="PASS" start="2024-11-21T10:38:07.352705" elapsed="0.000605"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.250636" elapsed="0.002479"/>
+<status status="PASS" start="2024-11-21T10:38:07.351550" elapsed="0.001830"/>
 </test>
 <test id="s1-s2-t6" name="Register With Valid Username And Long Enough Password Containing Only Letters" line="25">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" owner="AppLibrary">
-<msg time="2024-11-20T13:17:17.254366" level="INFO">Valid username
-Valid password
-Registered</msg>
+<msg time="2024-11-21T10:38:07.354103" level="INFO">Valid username
+Valid password</msg>
 <arg>kalle</arg>
 <arg>kallekallela123</arg>
-<status status="PASS" start="2024-11-20T13:17:17.254198" elapsed="0.000238"/>
+<status status="PASS" start="2024-11-21T10:38:07.353996" elapsed="0.000139"/>
 </kw>
 <kw name="Input Login Command" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>login</arg>
-<status status="PASS" start="2024-11-20T13:17:17.254744" elapsed="0.000083"/>
+<status status="PASS" start="2024-11-21T10:38:07.354408" elapsed="0.000061"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.254561" elapsed="0.000321"/>
+<status status="PASS" start="2024-11-21T10:38:07.354250" elapsed="0.000258"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.253906" elapsed="0.001017"/>
+<status status="PASS" start="2024-11-21T10:38:07.353833" elapsed="0.000707"/>
 </kw>
 <kw name="Input Credentials" owner="resource">
 <kw name="Input" owner="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.255244" elapsed="0.000353"/>
+<status status="PASS" start="2024-11-21T10:38:07.354804" elapsed="0.000113"/>
 </kw>
 <kw name="Input" owner="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-20T13:17:17.255739" elapsed="0.000161"/>
+<status status="PASS" start="2024-11-21T10:38:07.354974" elapsed="0.000091"/>
 </kw>
 <kw name="Run Application" owner="AppLibrary">
-<status status="PASS" start="2024-11-20T13:17:17.255988" elapsed="0.000083"/>
+<status status="PASS" start="2024-11-21T10:38:07.355122" elapsed="0.000072"/>
 </kw>
 <arg>matti</arg>
 <arg>mattimattimatti</arg>
-<status status="PASS" start="2024-11-20T13:17:17.255036" elapsed="0.001084"/>
+<status status="PASS" start="2024-11-21T10:38:07.354636" elapsed="0.000592"/>
 </kw>
-<status status="PASS" start="2024-11-20T13:17:17.253365" elapsed="0.002849"/>
+<status status="PASS" start="2024-11-21T10:38:07.353557" elapsed="0.001741"/>
 </test>
-<status status="PASS" start="2024-11-20T13:17:17.233506" elapsed="0.022989"/>
+<status status="PASS" start="2024-11-21T10:38:07.334936" elapsed="0.020625"/>
 </suite>
-<status status="PASS" start="2024-11-20T13:17:17.164875" elapsed="0.092079"/>
+<status status="PASS" start="2024-11-21T10:38:07.204484" elapsed="0.151476"/>
 </suite>
 <statistics>
 <total>
@@ -363,8 +354,8 @@ Registered</msg>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-11-20T13:17:17.147896" level="ERROR">Error in file 'C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\login.robot' on line 4: Non-existing setting 'from entities.user import User'.</msg>
-<msg time="2024-11-20T13:17:17.150158" level="ERROR">Error in file 'C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\register.robot' on line 4: Non-existing setting 'from entities.user import User'.</msg>
-<msg time="2024-11-20T13:17:17.150247" level="ERROR">Error in file 'C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\register.robot' on line 7: Setting 'Test Setup' is allowed only once. Only the first value is used.</msg>
+<msg time="2024-11-21T10:38:07.182408" level="ERROR">Error in file 'C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\login.robot' on line 4: Non-existing setting 'from entities.user import User'.</msg>
+<msg time="2024-11-21T10:38:07.185519" level="ERROR">Error in file 'C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\register.robot' on line 4: Non-existing setting 'from entities.user import User'.</msg>
+<msg time="2024-11-21T10:38:07.185648" level="ERROR">Error in file 'C:\Users\annik\OneDrive\Belgeler\kurssit\ohjelmistotuotanto\palautus\palautusrepo\osa3\login-robot\src\tests\register.robot' on line 7: Setting 'Test Setup' is allowed only once. Only the first value is used.</msg>
 </errors>
 </robot>
